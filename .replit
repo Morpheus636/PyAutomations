@@ -1,2 +1,2 @@
 language = "python3"
-run = "python -m src.morphtomations"
+run = "python -m src.automations"

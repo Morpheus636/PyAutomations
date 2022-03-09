@@ -12,7 +12,7 @@ keep_alive()
 
 
 # Import all the tasks
-TASKS_DIR = os.path.join(os.getcwd(), "src", "morphtomations", "tasks")
+TASKS_DIR = os.path.join(os.getcwd(), "src", "automations", "tasks")
 tasks = []
 
 sys.path.append(TASKS_DIR)

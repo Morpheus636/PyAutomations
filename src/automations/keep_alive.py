@@ -1,17 +1,19 @@
-from flask import Flask
 from threading import Thread
 
+from flask import Flask
+
+
 # this is only used for replit and does not need to be added if you are running this client-side
-app = Flask('')
+app = Flask("")
 
 
-@app.route('/')
+@app.route("/")
 def home():
     return "Online and pinging"
 
 
 def run():
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host="0.0.0.0", port=8080)
 
 
 def keep_alive():

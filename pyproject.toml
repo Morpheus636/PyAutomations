@@ -22,7 +22,7 @@ use_parentheses = "True"
 [tool.poetry]
 authors = ["Morpheus636 <josh@joshinshaker.com>"]
 description = ""
-name = "morphtomations"
+name = "automations"
 version = "1.0.0"
 [tool.poetry.dependencies]
 python = "^3.8"
