@@ -282,7 +282,7 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xm
 name = "pyyaml"
 version = "6.0"
 description = "YAML parser and emitter for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -339,7 +339,7 @@ testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "cd9dd45c9d0dadb464e81583a365a2186795d072a16a1914facd58841f452c7e"
+content-hash = "4a3a3156be17a97266813888e37bb0a59766ae6671cd9a6ea6cd6094102650cb"
 
 [metadata.files]
 atomicwrites = [
