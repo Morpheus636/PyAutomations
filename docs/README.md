@@ -1,4 +1,4 @@
-# Morphtomations - Morpheus's Automations
+Morpheus's Automations
 Morphtomations are a set of simple automations meant to run in replit. 
 
 ## Documentation
