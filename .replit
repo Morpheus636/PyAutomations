@@ -1,2 +1,2 @@
 language = "python3"
-run = "exit"
+run = "python -m src.morphtomations"
