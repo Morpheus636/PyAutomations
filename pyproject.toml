@@ -1,37 +1,35 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool]
+[tool.black]
+include = "\\.pyi"
+line-length = 100
+target-version = ["py38"]
+[tool.isort]
+combine_as_imports = "True"
+ensure_newline_before_comments = "True"
+force_alphabetical_sort_within_sections = "True"
+force_grid_wrap = 0
+include_trailing_comma = "True"
+line_length = 100
+lines_after_imports = 2
+multi_line_output = 3
+profile = "black"
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+use_parentheses = "True"
 [tool.poetry]
+authors = ["Morpheus636 <josh@joshinshaker.com>"]
+description = ""
 name = "morphtomations"
 version = "1.0.0"
-description = ""
-authors = ["Morpheus636 <josh@joshinshaker.com>"]
-
 [tool.poetry.dependencies]
-python = "^3.9"
-
+python = "^3.8"
+PyYAML = "^6.0"
 [tool.poetry.dev-dependencies]
 black = "^21.7b0"
 flake8 = "^3.9.2"
 isort = "^5.9.3"
-pytest = "^6.2.4"
 pre-commit = "^2.13.0"
-
-[tool.black]
-line-length = 100
-target-version = ['py38']
-include = '\.pyi'
-
-[tool.isort]
-profile = "black"
-multi_line_output = 3
-line_length = 100
-include_trailing_comma = "True"
-force_grid_wrap = 0
-use_parentheses = "True"
-combine_as_imports = "True"
-force_alphabetical_sort_within_sections = "True"
-ensure_newline_before_comments = "True"
-sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
-lines_after_imports = 2
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+pytest = "^6.2.4"
