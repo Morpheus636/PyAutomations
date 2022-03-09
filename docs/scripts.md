@@ -1,15 +1,4 @@
 # Scripts
-###`./start-db.sh`
-Starts the local postgres and pgadmin instances in docker containers. It will print the connection info to the
-console once the containers are started.
-
-- The username and password for pgadmin are set in docker-compose-postgres.yml.
-- Postgres tries to load the database data from docker_pgsql_volume if it's present. 
-If not, it runs the initdb.sh script in docker_pgsql_init, which is where the postgres login and database name are set.
-
-###`./stop-db.sh`
-Stops the containers started by the above script.
-
 ### `poetry run black <path>`
 Runs the Black code formatter on whatever file or directory you pass to it as `<path>`.
 
@@ -36,7 +25,7 @@ This is run automatically on any files you change using pre-commit, and on all f
 during a pull request.
 
 ### `poetry run pytest`
-Runs pytest, which runs all of the tests for the project and tells you what problems
+Runs pytest, which runs all the tests for the project and tells you what problems
 arise. 
 
 For more usage instructions, use `poetry run pytest -h`
