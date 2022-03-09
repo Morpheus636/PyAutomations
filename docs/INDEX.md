@@ -6,3 +6,4 @@
 - [Scripts](scripts.md)
 - [Secrets](secrets.md)
 - [Deployment](deployment.md)
+- [Adding Automations](adding-tasks.md)
