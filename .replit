@@ -1,2 +1,8 @@
 language = "python3"
 run = "python -m src.automations"
+[packager]
+language = "python3"
+  [packager.features]
+  packageSearch = true
+  guessImports = false
+  
