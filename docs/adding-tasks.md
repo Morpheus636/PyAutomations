@@ -1,5 +1,5 @@
 # How to add automations
-Automations, or "tasks", live in python files in the src/morphtomations/tasks/ directory. 
+Automations, or "tasks", live in python files in the src/automations/tasks/ directory. 
 All python files in that directory will be imported when the program is started. 
 
 ## Scheduled tasks
@@ -35,7 +35,7 @@ Webhooks can be created by calling the `web_server.create_webhook()` function, a
 as the only arguments.
 
 The URL to the created webhook will be created based off of the name and the WEBHOOK_SECRET environment variable like
-this: `https://example.com/$WEBHOOK_SECRET/name`
+this: `https://example.com/WEBHOOK_PREFIX/name`
 
 ### Example:
 ```python

@@ -5,8 +5,6 @@ import os
 import werkzeug.datastructures
 import flask
 
-from . import utils
-
 
 app = flask.Flask("")
 webhooks = {}
@@ -22,7 +20,7 @@ def call_job_func(job_func):
     t.start()
 
 
-@app.route(f"/{os.environ['WEBHOOK_SECRET']}/<webhook_name>")
+@app.route(f"/{os.environ['WEBHOOK_PREFIX']}/<webhook_name>")
 def run_job_func(webhook_name):
     try:
         job_func = webhooks[webhook_name]
@@ -34,9 +32,9 @@ def run_job_func(webhook_name):
 
 
 def create_webhook(name: str, job_func: Callable[[werkzeug.datastructures.MultiDict], None]) -> None:
-    """Creates a webhook with path /$WEBHOOK_SECRET/name, which calls job_func in a thread when accessed.
+    """Creates a webhook with path /$WEBHOOK_PREFIX/name, which calls job_func in a thread when accessed.
 
-    :param name: The name of the webhook. Used in creating the route (/$WEBHOOK_SECRET/name)
+    :param name: The name of the webhook. Used in creating the route (/$WEBHOOK_PREFIX/name)
     :param job_func: The function to call (in a thread) when the webhook is accessed. Must take a MultiDict
     from flask.Request.args as it's only argument.
     :return: None
