@@ -10,6 +10,9 @@ from . import web_server
 # Import all the tasks
 TASKS_DIR = os.path.join(os.getcwd(), "src", "automations", "tasks")
 tasks = []
+# Ensure the tasks dir exists
+if not os.path.isdir(TASKS_DIR):
+    os.mkdir(TASKS_DIR)
 sys.path.append(TASKS_DIR)
 for task in os.listdir(TASKS_DIR):
     file_extn = ".py"
