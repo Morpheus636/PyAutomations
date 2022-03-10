@@ -5,16 +5,11 @@ import time
 
 import schedule
 
-from .keep_alive import keep_alive
-
-
-keep_alive()
-
+from . import web_server
 
 # Import all the tasks
 TASKS_DIR = os.path.join(os.getcwd(), "src", "automations", "tasks")
 tasks = []
-
 sys.path.append(TASKS_DIR)
 for task in os.listdir(TASKS_DIR):
     file_extn = ".py"
@@ -23,7 +18,12 @@ for task in os.listdir(TASKS_DIR):
         task_module = importlib.import_module(module_name)
         tasks.append(task_module)
 
-# Do the thing.
+
+# Start the web server.
+web_server.start()
+
+
+# Start the schedule loop.
 while 1:
     schedule.run_pending()
     time.sleep(1)
