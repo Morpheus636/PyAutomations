@@ -2,7 +2,7 @@
 A framework for writing automations in python to host in `repl.it`
 
 ## Using PyAutomations
-To use PyAutomations, fork this repository and then follow the instructions in the [Adding Automations](adding-tasks.md)
+To use PyAutomations, click "Use This Template" and then follow the instructions in the [Adding Automations](adding-tasks.md)
 page.
 
 Once you have your automations written, you can deploy them to `repl.it` by following the [Deployment Instructions](deployment.md)
