@@ -8,7 +8,7 @@ import schedule
 from . import web_server
 
 # Import all the tasks
-TASKS_DIR = os.path.join(os.getcwd(), "src", "automations", "tasks")
+TASKS_DIR = os.path.join(os.getcwd(), "src", "pyautomations", "tasks")
 tasks = []
 # Ensure the tasks dir exists
 if not os.path.isdir(TASKS_DIR):

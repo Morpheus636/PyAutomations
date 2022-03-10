@@ -1,5 +1,5 @@
 # How to add automations
-Automations, or "tasks", live in python files in the src/automations/tasks/ directory. 
+Automations, or "tasks", live in python files in the src/pyautomations/tasks/ directory. 
 All python files in that directory will be imported when the program is started. 
 
 ## Scheduled tasks
