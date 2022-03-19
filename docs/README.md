@@ -12,9 +12,10 @@ If you want to contribute to PyAutomations, feel free! Just fork this repository
 the one with your automations in it) and create a Pull Request when you're ready.
 
 ## Contact
-If you'd like to discuss your contributions, get support, or request a feature, you can:
-- Join my [Discord Server](https://discord.morpheus636.com)
-- Open a [GitHub Issue](https://github.com/Morpheus636/pyautomations/issues/new)
+To submit a Bug Report or Feature Request, please open a [GitHub Issue](https://github.com/Morpheus636/pyautomations/issues/new).
+
+To ask a question or get support, you can join my [Discord Server](https://discord.morpheus636.com) or ask in the PyAutomations section of my 
+[Forums](https://forums.morpheus636.com)
 
 ## Documentation
 To view all of the available documentation for this project, please see the [Documents Index](INDEX.md)
