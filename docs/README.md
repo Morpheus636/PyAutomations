@@ -10,8 +10,7 @@ Once you have your automations written, you can deploy them to `repl.it` by foll
 ## Contact
 To submit a Bug Report or Feature Request, please open a [GitHub Issue](https://github.com/Morpheus636/pyautomations/issues/new).
 
-To ask a question or get support, you can join my [Discord Server](https://discord.morpheus636.com) or ask in the PyAutomations section of my 
-[Forums](https://forums.morpheus636.com)
+To ask a question or get support, you can join my [Discord Server](https://discord.morpheus636.com) or create a Discussions thread within this repository.
 
 ## Contributing
 To contribute to this project, view the Contribution Docs found in [CONTRIBUTING.md](CONTRIBUTING.md)
