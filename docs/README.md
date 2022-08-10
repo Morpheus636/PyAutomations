@@ -2,7 +2,9 @@
 A framework for writing automations in python to host in `repl.it`
 
 # Features
-- 
+- Easy to version-comtrol your automations
+- Can do anything Python can do
+- Simple interfaces for timer and webhook automation triggers.
 
 ## Usage
 To use PyAutomations, click "Use This Template" and then follow the instructions in the [Adding Automations](adding-tasks.md)
